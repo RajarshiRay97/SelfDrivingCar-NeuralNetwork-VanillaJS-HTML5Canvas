@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    background: darkgray;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#networkCanvas {
+    background: black;
+}
+#carCanvas {
+    background: lightgray;
+}
+
+#verticalButtons {
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 15px 10px;
+    cursor: pointer;
+}
+
+#manualDrive{
+    background: #a8caf5;
+}
+#manualDrive:hover{
+    background: #67a1e9;
+}
+
+#selfDrive {
+    background: #b9ffb8;
+}
+#selfDrive:hover {
+    background: #86ef85;
+}
+
+#save{
+    background: #fffdb4;
+}
+#save:hover{
+    background: #fffc7e;
+}
+
+#discard {
+    padding: 5px 3px 3px 5px;
+    background: #ffcfcf;
+}
+#discard:hover {
+    background: #ffb6b6;
+}
+
+#carControl {
+    background: papayawhip;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 276px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 12px 0px grey;
+}
+h2,h3 {
+    text-align: center;
+}
+#heading{
+    margin-bottom: 4px;
+}
+#instruction{
+    font-style: italic;
+    color: brown;
+}

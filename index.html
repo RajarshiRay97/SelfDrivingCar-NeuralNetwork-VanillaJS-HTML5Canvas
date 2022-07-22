@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Self Driving Car - Neural Network</title>
+</head>
+<body>
+    <canvas id="carCanvas"></canvas>
+    <div id="verticalButtons">
+        <button id="manualDrive" onclick="manualDrive()" title="Manual Mode">
+            <img src="./Imgs/manual.png" alt="" style="width:30px">
+        </button>
+        <button id="selfDrive" onclick="selfDrive()" title="Auto-Pilot Mode">
+            <img src="./Imgs/selfDriving.png" alt="" style="width:30px;filter:brightness(0.2)">
+        </button>
+        <button id="save" onclick="save()" title="Save Best Brain">
+            <img src="./Imgs/save.png" alt="" style="width:30px">
+        </button>
+        </button>
+        <button id="discard" onclick="discard()" title="Discard Best Brain">
+            <img src="./Imgs/trash.png" alt="" style="width:30px">
+        </button>
+    </div>
+    <div id="carControl">
+        <h2 id="heading">Manual Car Control Instruction</h2>
+        <h3 id="instruction">Use The Keyboard Arrow Keys To Control The Car</h3>
+        <img src="./Imgs/Controller.png" alt="">
+    </div>
+    <canvas id="networkCanvas" style="display:none"></canvas>
+    <script src="Network.js"></script>
+    <script src="Visualizer.js"></script>
+    <script src="Sensor.js"></script>
+    <script src="utils.js"></script>
+    <script src="Road.js"></script>
+    <script src="Controls.js"></script>
+    <script src="Car.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
